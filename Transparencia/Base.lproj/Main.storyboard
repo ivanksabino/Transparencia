@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Transparencia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dudu" translatesAutoresizingMaskIntoConstraints="NO" id="afi-We-Dmf">
+                                <rect key="frame" x="145" y="696.5" width="124" height="165.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="afi-We-Dmf" secondAttribute="height" multiplier="3:4" id="cVT-OG-kzq"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-tv-Flh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="652.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deputadosCell" id="S1e-E4-fVq" customClass="DeputadosTableViewCell" customModule="Transparencia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S1e-E4-fVq" id="Oy7-wg-fZ8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9n-mO-LvI">
+                                                    <rect key="frame" x="30" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6p-qF-zVy">
+                                                    <rect key="frame" x="332" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="t6p-qF-zVy" firstAttribute="centerY" secondItem="Oy7-wg-fZ8" secondAttribute="centerY" id="GKT-ra-1w0"/>
+                                                <constraint firstItem="e9n-mO-LvI" firstAttribute="leading" secondItem="Oy7-wg-fZ8" secondAttribute="leadingMargin" constant="10" id="d3w-Wc-iGw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="t6p-qF-zVy" secondAttribute="trailing" constant="20" id="hE4-ik-hWW"/>
+                                                <constraint firstItem="e9n-mO-LvI" firstAttribute="centerY" secondItem="Oy7-wg-fZ8" secondAttribute="centerY" id="wgg-9V-Hlu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nomeLabel" destination="e9n-mO-LvI" id="DbJ-Cf-4Jc"/>
+                                            <outlet property="valorLabel" destination="t6p-qF-zVy" id="Pon-ZJ-29G"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="V5l-0V-OYe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fEV-As-O4q"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="afi-We-Dmf" firstAttribute="top" secondItem="Cje-tv-Flh" secondAttribute="bottom" id="OQ7-fl-68J"/>
+                            <constraint firstItem="Cje-tv-Flh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OQP-Pw-Hjo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cje-tv-Flh" secondAttribute="trailing" id="c78-B0-wgb"/>
+                            <constraint firstItem="afi-We-Dmf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="kEd-EJ-841"/>
+                            <constraint firstItem="Cje-tv-Flh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mz1-o9-scT"/>
+                            <constraint firstItem="afi-We-Dmf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rje-dx-gJn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="afi-We-Dmf" secondAttribute="bottom" id="tzH-qL-b1G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Cje-tv-Flh" id="UQJ-P5-DyC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dudu" width="114" height="152"/>
+    </resources>
+</document>
