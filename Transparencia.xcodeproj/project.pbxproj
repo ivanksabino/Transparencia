@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31363CA224F95C9C007073B5 /* DeputadosGastos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31363CA124F95C9C007073B5 /* DeputadosGastos.json */; };
 		31A0B31824F5A37B00E808B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0B31724F5A37B00E808B0 /* AppDelegate.swift */; };
 		31A0B31A24F5A37B00E808B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0B31924F5A37B00E808B0 /* SceneDelegate.swift */; };
 		31A0B31C24F5A37B00E808B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0B31B24F5A37B00E808B0 /* ViewController.swift */; };
@@ -17,8 +18,6 @@
 		31A0B33224F5A37D00E808B0 /* TransparenciaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0B33124F5A37D00E808B0 /* TransparenciaTests.swift */; };
 		31A0B33D24F5A37D00E808B0 /* TransparenciaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0B33C24F5A37D00E808B0 /* TransparenciaUITests.swift */; };
 		31A0B34B24F5A4B300E808B0 /* Parlamentares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0B34A24F5A4B300E808B0 /* Parlamentares.swift */; };
-		31A0B34D24F5A5A900E808B0 /* deputadosSomaGastos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31A0B34C24F5A5A800E808B0 /* deputadosSomaGastos.json */; };
-		31A0B34F24F5AEE200E808B0 /* deputadosGastos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31A0B34E24F5AEE200E808B0 /* deputadosGastos.json */; };
 		31A0B35124F5B07200E808B0 /* DeputadosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A0B35024F5B07200E808B0 /* DeputadosTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31363CA124F95C9C007073B5 /* DeputadosGastos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DeputadosGastos.json; sourceTree = "<group>"; };
 		31A0B31424F5A37B00E808B0 /* Transparencia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transparencia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A0B31724F5A37B00E808B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31A0B31924F5A37B00E808B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +56,6 @@
 		31A0B33C24F5A37D00E808B0 /* TransparenciaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparenciaUITests.swift; sourceTree = "<group>"; };
 		31A0B33E24F5A37D00E808B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31A0B34A24F5A4B300E808B0 /* Parlamentares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parlamentares.swift; sourceTree = "<group>"; };
-		31A0B34C24F5A5A800E808B0 /* deputadosSomaGastos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deputadosSomaGastos.json; sourceTree = "<group>"; };
-		31A0B34E24F5AEE200E808B0 /* deputadosGastos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deputadosGastos.json; sourceTree = "<group>"; };
 		31A0B35024F5B07200E808B0 /* DeputadosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeputadosTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,11 +113,10 @@
 				31A0B31D24F5A37B00E808B0 /* Main.storyboard */,
 				31A0B32324F5A37C00E808B0 /* Assets.xcassets */,
 				31A0B32524F5A37C00E808B0 /* LaunchScreen.storyboard */,
-				31A0B34C24F5A5A800E808B0 /* deputadosSomaGastos.json */,
 				31A0B32824F5A37C00E808B0 /* Info.plist */,
-				31A0B34E24F5AEE200E808B0 /* deputadosGastos.json */,
 				31A0B32024F5A37B00E808B0 /* Transparencia.xcdatamodeld */,
 				31A0B34A24F5A4B300E808B0 /* Parlamentares.swift */,
+				31363CA124F95C9C007073B5 /* DeputadosGastos.json */,
 				31A0B35024F5B07200E808B0 /* DeputadosTableViewCell.swift */,
 			);
 			path = Transparencia;
@@ -248,9 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				31A0B32724F5A37C00E808B0 /* LaunchScreen.storyboard in Resources */,
+				31363CA224F95C9C007073B5 /* DeputadosGastos.json in Resources */,
 				31A0B32424F5A37C00E808B0 /* Assets.xcassets in Resources */,
-				31A0B34D24F5A5A900E808B0 /* deputadosSomaGastos.json in Resources */,
-				31A0B34F24F5AEE200E808B0 /* deputadosGastos.json in Resources */,
 				31A0B31F24F5A37B00E808B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
